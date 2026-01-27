@@ -1,0 +1,14 @@
+[importlinter]
+root_package = src.stock
+include_external_packages = True
+exclude_type_checking_imports = True
+
+[importlinter:contract:hexagonal-layers-contract]
+name = Hexagonal arch
+type = layers
+layers =
+    infrastructure
+    application
+    domain
+containers = 
+    src.stock
