@@ -31,11 +31,11 @@ class Batch:
             return False
         return self.eta > other.eta
 
-    def allocate(self, line: OrderLine):
+    def allocate(self, line: OrderLine) -> None:
         if self.can_allocate(line):
             self._allocations.add(line)
 
-    def deallocate(self, line: OrderLine):
+    def deallocate(self, line: OrderLine) -> None:
         if line in self._allocations:
             self._allocations.remove(line)
 

@@ -15,3 +15,6 @@ lint = [
     "import-linter>=2.9",
     "ruff>=0.14.14",
 ]
+test = [
+    "pytest>=9.0.2",
+]
